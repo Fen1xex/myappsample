@@ -11,7 +11,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div>
-        <Link to='./' className='btn'>
+        <Link to='/' className='btn'>
           Home
         </Link>
         <Link to='/about' className='btn'>
