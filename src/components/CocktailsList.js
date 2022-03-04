@@ -2,6 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context'
 import styled from 'styled-components'
 import Cocktail from './Cocktail'
+import { Link } from 'react-router-dom'
 
 const CocktailsList = () => {
   const { isLoading, drinks } = useGlobalContext()
@@ -20,7 +21,11 @@ const CocktailsList = () => {
   return (
     <Wrapper>
       {drinks.map((item) => {
-        return <Cocktail key={item.idDrink} {...item} />
+        return (
+          <Link to={`./cocktails/${item.idDrink}`} key={item.idDrink}>
+            <Cocktail {...item} />
+          </Link>
+        )
       })}
     </Wrapper>
   )

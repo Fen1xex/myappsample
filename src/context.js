@@ -6,7 +6,7 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 
 const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
-  const [query, setQuery] = useState('a')
+  const [query, setQuery] = useState('')
   const [drinks, setDrinks] = useState([])
 
   const fetchDrinks = async (url) => {
