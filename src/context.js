@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 
 const AppContext = React.createContext()
 
-const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a'
+const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 
 const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
@@ -23,11 +23,11 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    fetchDrinks(url)
-  }, [])
+    fetchDrinks(`${url}${query}`)
+  }, [query])
 
   return (
-    <AppContext.Provider value={{ isLoading, drinks }}>
+    <AppContext.Provider value={{ isLoading, drinks, query, setQuery }}>
       {children}
     </AppContext.Provider>
   )

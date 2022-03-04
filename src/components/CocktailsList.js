@@ -12,6 +12,11 @@ const CocktailsList = () => {
       </Loading>
     )
   }
+  if (!drinks) {
+    return (
+      <Error>There is no drinks matched your search. Please, try again.</Error>
+    )
+  }
   return (
     <Wrapper>
       {drinks.map((item) => {
@@ -39,6 +44,10 @@ const Wrapper = styled.section`
   width: 75vw;
   max-width: 75vw;
   margin: 0 auto;
+`
+
+const Error = styled.h4`
+  text-align: center;
 `
 
 export default CocktailsList
