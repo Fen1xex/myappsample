@@ -1,7 +1,16 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import SearchForm from '../components/SearchForm'
+import CocktailsList from '../components/CocktailsList'
 
 const Home = () => {
-  return <h4>Home page</h4>
+  return (
+    <main>
+      <Navbar />
+      <SearchForm />
+      <CocktailsList />
+    </main>
+  )
 }
 
 export default Home
