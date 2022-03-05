@@ -22,11 +22,12 @@ const Wrapper = styled.article`
     transform: translateY(-120%);
     padding: 10px 10px 10px 10px;
     margin-top: 25px;
-    margin-left: 5px;
+    margin-left: 25px;
     border-radius: 5px;
     font-size: 1.5rem;
     color: black;
-    width: 50%;
+    width: 100%;
+    border: 2px solid black;
     background: orange;
     text-align: end;
   }
