@@ -26,6 +26,17 @@ const SearchForm = () => {
 const Wrapper = styled.form`
   text-align: center;
   margin-bottom: 5rem;
+  input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    background: transparent;
+    padding-left: 10px;
+  }
+  input:focus {
+    outline: none;
+    border-color: orange;
+  }
 `
 
 export default SearchForm
