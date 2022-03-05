@@ -58,11 +58,17 @@ const Nav = styled.nav`
     padding: 0 0.5rem;
     margin-right: 2.5rem;
     color: #fcfcfc;
+    display: none;
   }
   .btn:hover {
     background: orange;
     border-radius: 5px;
     transition: 0.1s;
+  }
+  @media screen and (min-width: 650px) {
+    .btn {
+      display: inline;
+    }
   }
 `
 

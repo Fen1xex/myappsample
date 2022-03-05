@@ -49,6 +49,9 @@ const Wrapper = styled.section`
   width: 75vw;
   max-width: 75vw;
   margin: 0 auto;
+  @media screen and (max-width: 650px) {
+    justify-items: center;
+  }
 `
 
 const Error = styled.h4`

@@ -38,14 +38,13 @@ const Basement = styled.footer`
     width: 100%;
     padding: 0.7rem 1.5rem 0rem 0.5rem;
     position: relative;
-    border-bottom: 1.5px solid black;
   }
   .icon {
     font-size: 2rem;
     position: absolute;
     top: 50%;
     color: orange;
-    /* left: 50%; */
+
     transform: translate(-0%, -50%);
   }
   span {
